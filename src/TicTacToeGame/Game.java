@@ -1,8 +1,19 @@
 package TicTacToeGame;
 
 public class Game {
-    Board b;
+    public Board board;
+    public Player player1;
+    public Player player2;
 
-    Player P1 = new Player("Nahid",'O');
-    Player P2 = new Player("Faham",'X');
+    public Game(){
+        player1 = new Player("Nahid", 'X');
+        player2 = new Player("Faham", 'O');
+
+        board = new Board();
+    }
+
+    public void play() {
+        System.out.println("Welcome to tic toc game.");
+        player1.makeMove();
+    }
 }

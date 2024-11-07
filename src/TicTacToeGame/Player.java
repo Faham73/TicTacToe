@@ -10,6 +10,8 @@ public class Player {
     public Player(){
 
     }
+
+
     public Player(String Name, char Symbol){
         this.name = Name;
         this.symbol = Symbol;
@@ -17,8 +19,14 @@ public class Player {
     }
 
 //    Mark
-    void move(){
-
+    public String getName(){
+        return name;
+    }
+    public char getSymbol(){
+        return symbol;
     }
 
+    public void makeMove() {
+
+    }
 }

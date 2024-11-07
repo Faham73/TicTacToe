@@ -1,5 +1,11 @@
+import TicTacToeGame.Game;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Game game;  // Object Declaration
+        game = new Game();  //Object Creation
+
+        game.play();
     }
+
 }

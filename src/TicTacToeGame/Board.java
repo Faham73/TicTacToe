@@ -3,23 +3,24 @@ package TicTacToeGame;
 public class Board {
 
     //    3 by 3
-    char[][] board;
-
-    public Board(){
-        board = new char[3][3];
-        for (int i=0; i< board.length; i++){
-            for (int j=0; j< board.length; j++){
-                board[i][j] = '.';
+    char[][] grid;
+    public Board() {
+        grid = new char[3][3];
+        for (int i=0; i<3; i++){
+            for (int j=0; j<3; j++){
+                
             }
         }
     }
-    void Display(){
-        for (int i=0; i< board.length; i++) {
-            for (int j = 0; j < board.length; j++) {
-                System.out.print(board[i][j] + " ");
+    
+    public void display(){
+        for (int i=0; i<3; i++){
+            for (int j=0; j<3; j++){
+                System.out.print(grid[i][j]='.');
             }
-            System.out.println();
         }
     }
 
+    public void setMark() {
+    }
 }
